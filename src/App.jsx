@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Star, Heart, ShoppingCart, Users, Award, MapPin, Phone, Mail } from 'lucide-react';
-import Navbar from '../src/components/navbar';
+import Navbar from '../src/components/Navbar';
 import Hero from './components/Hero';
 import Footer from './components/Footer';
 import About from './components/About';
