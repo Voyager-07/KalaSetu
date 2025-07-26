@@ -147,17 +147,17 @@ const ProductCard = ({ product, language = 'en' }) => {
                 <p className="text-gray-600 text-sm mb-4">
                     {product.description[language] || product.description.en}
                 </p>
-                <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center justify-between mb-2">
                     <div className="flex items-center">
                         <Star className="w-4 h-4 text-yellow-500 fill-current" />
                         <span className="ml-1 text-sm text-gray-600">{product.rating}</span>
                     </div>
                     <span className="text-2xl font-bold text-amber-900 font-serif">{product.price}</span>
                 </div>
-                <button className="w-full bg-gradient-to-r from-amber-600 to-orange-600 text-white py-3 rounded-lg font-semibold hover:from-amber-700 hover:to-orange-700 transition-all duration-300 flex items-center justify-center">
+                {/* <button className="w-full bg-gradient-to-r from-amber-600 to-orange-600 text-white py-3 rounded-lg font-semibold hover:from-amber-700 hover:to-orange-700 transition-all duration-300 flex items-center justify-center">
                     <ShoppingCart className="w-5 h-5 mr-2" />
                     {currentContent.addToCart}
-                </button>
+                </button> */}
             </div>
         </div>
     );

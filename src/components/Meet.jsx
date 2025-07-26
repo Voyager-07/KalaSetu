@@ -9,7 +9,7 @@ const Meet = ({ language = 'en' }) => {
     const content = {
         en: {
             title: "Our Community",
-            subtitle: "Meet the talented artisans who breathe life into every creation, carrying forward traditions passed down through generations",
+            subtitle: "Connecting you with over 500 expert craftspeople across 15 states, each a custodian of unique cultural artistry",
             artisansCount: "500+ Artisans",
             artisansDesc: "Skilled craftspeople from across 15 states, each bringing their unique heritage and expertise",
             craftFormsCount: "50+ Craft Forms",
@@ -17,9 +17,6 @@ const Meet = ({ language = 'en' }) => {
             generationsTitle: "Generations of Wisdom",
             generationsDesc: "Centuries-old techniques passed down through families, creating authentic masterpieces",
             meetArtisansTitle: "Meet Our Master Craftsmen",
-            joinCommunityTitle: "Join Our Heritage Community",
-            joinCommunityDesc: "Every purchase directly supports these talented artisans and their families, helping preserve India's rich cultural heritage for future generations.",
-            supportButton: "Support Our Artisans",
             legacyText: "Preserving Ancient Arts"
         },
         hi: {
@@ -32,9 +29,6 @@ const Meet = ({ language = 'en' }) => {
             generationsTitle: "पीढ़ियों की बुद्धिमत्ता",
             generationsDesc: "सदियों पुरानी तकनीकें जो परिवारों में पीढ़ी-दर-पीढ़ी चली आ रही हैं, प्रामाणिक कृतियों का निर्माण करती हैं",
             meetArtisansTitle: "हमारे मास्टर शिल्पकारों से मिलें",
-            joinCommunityTitle: "हमारे विरासत समुदाय में शामिल हों",
-            joinCommunityDesc: "हर खरीदारी इन प्रतिभाशाली कलाकारों और उनके परिवारों का सीधा समर्थन करती है, भारत की समृद्ध सांस्कृतिक विरासत को भावी पीढ़ियों के लिए संरक्षित करने में मदद करती है।",
-            supportButton: "हमारे कलाकारों का समर्थन करें",
             legacyText: "प्राचीन कलाओं का संरक्षण"
         }
     };
@@ -217,38 +211,6 @@ const Meet = ({ language = 'en' }) => {
                                     </div>
                                 ))}
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Call to Action Section - Enhanced */}
-                <div className="text-center mt-24">
-                    <div className="max-w-5xl mx-auto bg-gradient-to-br from-white/95 to-amber-50/95 backdrop-blur-xl rounded-3xl p-16 shadow-2xl border border-amber-200/50 relative overflow-hidden">
-                        {/* Subtle background accent */}
-                        <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-orange-200/20 to-transparent rounded-full blur-3xl"></div>
-                        <div className="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-red-200/20 to-transparent rounded-full blur-3xl"></div>
-                        
-                        <div className="relative z-10">
-                            <div className="mb-8">
-                                <div className="inline-flex items-center justify-center mb-6">
-                                    <div className="w-12 h-1 bg-gradient-to-r from-transparent to-orange-500 rounded-full"></div>
-                                    <Heart className="w-8 h-8 text-red-600 mx-4 animate-pulse" />
-                                    <div className="w-12 h-1 bg-gradient-to-l from-transparent to-orange-500 rounded-full"></div>
-                                </div>
-                                <h3 className="text-4xl font-bold bg-gradient-to-r from-orange-800 to-red-700 bg-clip-text text-transparent mb-6 font-serif">{currentContent.joinCommunityTitle}</h3>
-                                <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-red-500 mx-auto rounded-full shadow-lg mb-8"></div>
-                            </div>
-                            <p className="text-orange-700 text-xl leading-relaxed mb-12 font-medium max-w-3xl mx-auto">
-                                {currentContent.joinCommunityDesc}
-                            </p>
-                            <button className="group relative bg-gradient-to-r from-orange-600 via-red-600 to-orange-600 text-white px-16 py-5 rounded-full text-xl font-bold shadow-2xl hover:shadow-orange-500/25 transform hover:-translate-y-2 hover:scale-105 transition-all duration-500 overflow-hidden border-2 border-white/20">
-                                <span className="relative z-10 flex items-center justify-center">
-                                    <Heart className="w-6 h-6 mr-3 group-hover:animate-pulse" />
-                                    {currentContent.supportButton}
-                                </span>
-                                <div className="absolute inset-0 bg-gradient-to-r from-red-600 via-orange-600 to-red-600 opacity-0 group-hover:opacity-100 transition-all duration-500 transform scale-110"></div>
-                                <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                            </button>
                         </div>
                     </div>
                 </div>

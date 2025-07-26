@@ -3,64 +3,84 @@ import React from "react";
 const Journey = ({ language = 'en' }) => {
   const content = {
     en: {
-      title: "Our Journey",
-      subtitle: "From a small initiative to a movement that celebrates India's rich artisan heritage",
+      title: "My Entrepreneurial Journey",
+      subtitle: "The Story Behind KalaSetu",
       steps: [
         {
-          year: "2020",
-          title: "The Vision",
-          description: "Founded with a dream to connect skilled Indian artisans with global markets, preserving centuries-old traditions."
+          step: "1",
+          title: "The Spark – Vision Behind the Venture",
+          description: "I noticed many local artisans with incredible talent but no platform to showcase it. That's when the idea of KalaSetu was born — to bring their hidden art to light."
         },
         {
-          year: "2021",
-          title: "First Community",
-          description: "Partnered with 50 artisan families across 5 states, creating sustainable livelihood opportunities."
+          step: "2",
+          title: "The First Steps – Building a Community",
+          description: "I discussed this problem with my teacher to validate if it truly exists. That small discussion sparked a big mission and gave the confidence to move forward."
         },
         {
-          year: "2022",
-          title: "Digital Expansion",
-          description: "Launched our digital platform, enabling direct sales and showcasing authentic Indian craftsmanship."
+          step: "3",
+          title: "Seizing the Moment – Getting the Opportunity",
+          description: "I got the chance to present the idea at the KIIT Ideathon. The judges appreciated the presentation, which gave me the first real push to take it seriously."
         },
         {
-          year: "2023",
-          title: "National Recognition",
-          description: "Received the National Award for Supporting Traditional Arts and Crafts."
+          step: "4",
+          title: "From Idea to Reality – Prototyping the Dream",
+          description: "After being selected among the top 15 teams, we began building a strong prototype. It was the first step in turning the idea into something tangible."
         },
         {
-          year: "2024",
-          title: "Global Reach",
-          description: "Expanded to serve customers worldwide, with 500+ artisan partners across 15 states."
+          step: "5",
+          title: "Learning Along the Way – Challenges & Growth",
+          description: "There were rejections and tough moments, but I believe in learning by doing. Each failure became a lesson that shaped the project and me."
+        },
+        {
+          step: "6",
+          title: "Looking Ahead – The Future Vision",
+          description: "I aim to make KalaSetu the No.1 Indian brand that promotes our culture not just in India, but globally — with no limits."
+        },
+        {
+          step: "7",
+          title: "The Impact We Aim For – Our Mission Beyond Business",
+          description: "Our goal is to ensure artisans get the value, dignity, and recognition they truly deserve in today's world."
         }
       ]
     },
     hi: {
-      title: "हमारी यात्रा",
-      subtitle: "एक छोटी सी पहल से लेकर भारत की समृद्ध कारीगर विरासत का जश्न मनाने वाले आंदोलन तक",
+      title: "मेरी उद्यमशीलता की यात्रा",
+      subtitle: "कलासेतु के पीछे की कहानी",
       steps: [
         {
-          year: "2020",
-          title: "दृष्टि",
-          description: "कुशल भारतीय कारीगरों को वैश्विक बाजारों से जोड़ने और सदियों पुरानी परंपराओं को संरक्षित करने के सपने के साथ स्थापना।"
+          step: "1",
+          title: "चिंगारी – उद्यम के पीछे की दृष्टि",
+          description: "मैंने देखा कि कई स्थानीय कारीगरों के पास अविश्वसनीय प्रतिभा है लेकिन इसे दिखाने का कोई मंच नहीं है। तभी कलासेतु का विचार जन्मा — उनकी छुपी हुई कला को उजागर करने के लिए।"
         },
         {
-          year: "2021",
-          title: "पहला समुदाय",
-          description: "5 राज्यों में 50 कारीगर परिवारों के साथ साझेदारी, स्थायी आजीविका के अवसर सृजित करना।"
+          step: "2",
+          title: "पहले कदम – समुदाय का निर्माण",
+          description: "मैंने इस समस्या पर अपने शिक्षक से चर्चा की कि क्या यह वास्तव में मौजूद है। उस छोटी सी चर्चा ने एक बड़े मिशन की शुरुआत की और आगे बढ़ने का विश्वास दिया।"
         },
         {
-          year: "2022",
-          title: "डिजिटल विस्तार",
-          description: "हमारे डिजिटल प्लेटफॉर्म का शुभारंभ, प्रत्यक्ष बिक्री और प्रामाणिक भारतीय शिल्पकला का प्रदर्शन।"
+          step: "3",
+          title: "अवसर को पकड़ना – मौका मिलना",
+          description: "मुझे KIIT आइडियाथॉन में अपना विचार प्रस्तुत करने का मौका मिला। जजों ने प्रेजेंटेशन की सराहना की, जिसने मुझे इसे गंभीरता से लेने की पहली वास्तविक प्रेरणा दी।"
         },
         {
-          year: "2023",
-          title: "राष्ट्रीय मान्यता",
-          description: "पारंपरिक कला और शिल्प के समर्थन के लिए राष्ट्रीय पुरस्कार प्राप्त किया।"
+          step: "4",
+          title: "विचार से वास्तविकता तक – सपने का प्रोटोटाइप",
+          description: "टॉप 15 टीमों में चुने जाने के बाद, हमने एक मजबूत प्रोटोटाइप बनाना शुरू किया। यह विचार को कुछ ठोस रूप देने की पहली सीढ़ी थी।"
         },
         {
-          year: "2024",
-          title: "वैश्विक पहुंच",
-          description: "15 राज्यों में 500+ कारीगर साझीदारों के साथ दुनिया भर के ग्राहकों की सेवा करने के लिए विस्तार।"
+          step: "5",
+          title: "रास्ते में सीखना – चुनौतियां और विकास",
+          description: "अस्वीकृतियां और कठिन क्षण आए, लेकिन मैं करके सीखने में विश्वास करता हूं। हर असफलता एक सबक बनी जिसने परियोजना और मुझे आकार दिया।"
+        },
+        {
+          step: "6",
+          title: "आगे देखना – भविष्य की दृष्टि",
+          description: "मेरा लक्ष्य कलासेतु को नंबर 1 भारतीय ब्रांड बनाना है जो हमारी संस्कृति को न केवल भारत में बल्कि विश्व स्तर पर बढ़ावा दे — बिना किसी सीमा के।"
+        },
+        {
+          step: "7",
+          title: "हमारा लक्ष्य प्रभाव – व्यवसाय से परे हमारा मिशन",
+          description: "हमारा उद्देश्य यह सुनिश्चित करना है कि कारीगरों को वह मूल्य, गरिमा और पहचान मिले जिसके वे आज की दुनिया में वास्तव में हकदार हैं।"
         }
       ]
     }
@@ -84,7 +104,7 @@ const Journey = ({ language = 'en' }) => {
           {currentLang.steps.map((step, index) => (
             <div key={index} className="flex items-start mb-16 relative">
               <div className="bg-gradient-to-br from-amber-500 to-orange-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-sm font-bold font-serif shadow-lg z-10 relative">
-                {step.year}
+                {step.step}
               </div>
               <div className="ml-8 flex-1">
                 <h3 className="text-2xl font-bold text-white mb-2 font-serif">{step.title}</h3>

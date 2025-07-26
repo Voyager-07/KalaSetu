@@ -8,6 +8,7 @@ import Journey from './components/Journey';
 import Products from './components/Products';
 import Meet from './components/Meet';
 import ProductsPage from './components/ProductsPage';
+import FeatureCards from './components/FeatureCards';
 
 const VocalForLocal = () => {
   const [currentPage, setCurrentPage] = useState('home');
@@ -186,20 +187,20 @@ const VocalForLocal = () => {
         <Hero language={language} scrollToSection={scrollToSection} />
         <Meet language={language} />
       </section>
-
       {/* Products Preview Section */}
       <section ref={productsRef} id="products">
         <Products 
           language={language} 
           navigateToPage={navigateToPage}
-        />
+          />
       </section>
 
       {/* Journey Section */}
       <section ref={journeyRef} id="journey">
         <Journey language={language} />
       </section>
-
+        <FeatureCards language={language} navigateToPage={navigateToPage} />
+      <hr class="h-px mx-14 border-2 border-amber-400 rounded-full"></hr>
       {/* About Section */}
       <section ref={aboutRef} id="about">
         <About language={language} />

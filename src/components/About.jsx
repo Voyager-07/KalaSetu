@@ -8,7 +8,7 @@ const About = ({ language = 'en' }) => {
             subtitle: 'Empowering artisans, preserving traditions, and celebrating the soul of Indian craftsmanship',
             mission: {
                 title: 'Our Mission',
-                description: 'To create a sustainable ecosystem where traditional Indian artisans can thrive in the modern world. We bridge the gap between age-old craftsmanship and contemporary markets, ensuring that these invaluable skills are preserved for future generations.'
+                description: 'To empower local artisans by providing them a platform to showcase their talent, preserve India\'s rich cultural heritage, and connect their craftsmanship with the global market - ensuring they receive the recognition, respect, and value they truly deserve.'
             },
             impact: {
                 title: 'Our Impact',
@@ -20,18 +20,18 @@ const About = ({ language = 'en' }) => {
                 }
             },
             values: {
-                title: 'Our Values',
-                authenticity: {
-                    title: 'Authenticity',
-                    description: 'Every product is genuinely handcrafted by skilled artisans'
-                },
-                community: {
-                    title: 'Community',
-                    description: 'Supporting artisan families and their communities'
+                title: 'Our Core Values',
+                empowerment: {
+                    title: 'Empowerment',
+                    description: 'Enabling artisans with opportunities to grow and succeed.'
                 },
                 heritage: {
                     title: 'Heritage',
-                    description: 'Preserving centuries-old traditions and techniques'
+                    description: 'Preserving and promoting India\'s cultural craftsmanship.'
+                },
+                fairValue: {
+                    title: 'Fair Value',
+                    description: 'Ensuring dignity, recognition, and rightful earnings for every artisan.'
                 }
             },
             contact: {
@@ -43,7 +43,7 @@ const About = ({ language = 'en' }) => {
             subtitle: 'कारीगरों को सशक्त बनाना, परंपराओं को संरक्षित करना, और भारतीय शिल्पकला की आत्मा का जश्न मनाना',
             mission: {
                 title: 'हमारा मिशन',
-                description: 'एक स्थायी पारिस्थितिकी तंत्र बनाना जहाँ पारंपरिक भारतीय कारीगर आधुनिक दुनिया में फल-फूल सकें। हम पुरानी शिल्पकला और समकालीन बाजारों के बीच की खाई को पाटते हैं, यह सुनिश्चित करते हुए कि ये अमूल्य कौशल भावी पीढ़ियों के लिए संरक्षित रहें।'
+                description: 'स्थानीय कारीगरों को उनकी प्रतिभा दिखाने के लिए एक मंच प्रदान करके, भारत की समृद्ध सांस्कृतिक विरासत को संरक्षित करके, और उनकी शिल्पकला को वैश्विक बाजार से जोड़कर सशक्त बनाना - यह सुनिश्चित करते हुए कि उन्हें वह पहचान, सम्मान और मूल्य मिले जिसके वे वास्तव में हकदार हैं।'
             },
             impact: {
                 title: 'हमारा प्रभाव',
@@ -55,18 +55,18 @@ const About = ({ language = 'en' }) => {
                 }
             },
             values: {
-                title: 'हमारे मूल्य',
-                authenticity: {
-                    title: 'प्रामाणिकता',
-                    description: 'प्रत्येक उत्पाद वास्तव में कुशल कारीगरों द्वारा हस्तनिर्मित है'
-                },
-                community: {
-                    title: 'समुदाय',
-                    description: 'कारीगर परिवारों और उनके समुदायों का समर्थन'
+                title: 'हमारे मुख्य मूल्य',
+                empowerment: {
+                    title: 'सशक्तिकरण',
+                    description: 'कारीगरों को बढ़ने और सफल होने के अवसर प्रदान करना।'
                 },
                 heritage: {
                     title: 'विरासत',
-                    description: 'सदियों पुरानी परंपराओं और तकनीकों का संरक्षण'
+                    description: 'भारत की सांस्कृतिक शिल्पकला का संरक्षण और प्रचार।'
+                },
+                fairValue: {
+                    title: 'उचित मूल्य',
+                    description: 'हर कारीगर के लिए गरिमा, पहचान और उचित कमाई सुनिश्चित करना।'
                 }
             },
             contact: {
@@ -124,17 +124,10 @@ const About = ({ language = 'en' }) => {
                   <h3 className="text-2xl font-bold text-amber-900 mb-4 font-serif">{currentLang.values.title}</h3>
                   <div className="space-y-4">
                     <div className="flex items-start">
-                      <Award className="w-6 h-6 text-amber-600 mt-1 mr-3 flex-shrink-0" />
-                      <div>
-                        <h4 className="font-semibold text-amber-900">{currentLang.values.authenticity.title}</h4>
-                        <p className="text-amber-700">{currentLang.values.authenticity.description}</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start">
                       <Users className="w-6 h-6 text-amber-600 mt-1 mr-3 flex-shrink-0" />
                       <div>
-                        <h4 className="font-semibold text-amber-900">{currentLang.values.community.title}</h4>
-                        <p className="text-amber-700">{currentLang.values.community.description}</p>
+                        <h4 className="font-semibold text-amber-900">{currentLang.values.empowerment.title}</h4>
+                        <p className="text-amber-700">{currentLang.values.empowerment.description}</p>
                       </div>
                     </div>
                     <div className="flex items-start">
@@ -142,6 +135,13 @@ const About = ({ language = 'en' }) => {
                       <div>
                         <h4 className="font-semibold text-amber-900">{currentLang.values.heritage.title}</h4>
                         <p className="text-amber-700">{currentLang.values.heritage.description}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <Award className="w-6 h-6 text-amber-600 mt-1 mr-3 flex-shrink-0" />
+                      <div>
+                        <h4 className="font-semibold text-amber-900">{currentLang.values.fairValue.title}</h4>
+                        <p className="text-amber-700">{currentLang.values.fairValue.description}</p>
                       </div>
                     </div>
                   </div>
@@ -152,16 +152,16 @@ const About = ({ language = 'en' }) => {
                   <div className="space-y-3">
                     <div className="flex items-center">
                       <Phone className="w-5 h-5 text-amber-600 mr-3" />
-                      <span className="text-amber-700">+91 98765 43210</span>
+                      <span className="text-amber-700">+91 988674XXX</span>
                     </div>
                     <div className="flex items-center">
                       <Mail className="w-5 h-5 text-amber-600 mr-3" />
-                      <span className="text-amber-700">hello@vocalforlocal.in</span>
+                      <span className="text-amber-700">kalasetu.team@gmail.com</span>
                     </div>
                     <div className="flex items-center">
                       <MapPin className="w-5 h-5 text-amber-600 mr-3" />
                       <span className="text-amber-700">
-                        {language === 'en' ? 'Lucknow, Uttar Pradesh, India' : 'लखनऊ, उत्तर प्रदेश, भारत'}
+                        {language === 'en' ? 'Lucknow, Uttar Pradesh' : 'लखनऊ, उत्तर प्रदेश'}
                       </span>
                     </div>
                   </div>

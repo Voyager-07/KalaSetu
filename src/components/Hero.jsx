@@ -20,8 +20,8 @@ const Hero = ({ language = 'en', scrollToSection }) => {
     const content = {
         en: {
             mainTitle: "Vocal for Local",
-            subtitle: "Celebrating the Heritage of Indian Craftsmanship",
-            description: "Connect directly with skilled artisans across India. Every purchase supports traditional crafts, preserves cultural heritage, and empowers local communities.",
+            subtitle: "Discover the Soul of India Through Handcrafted Excellence",
+            description: "Step into a world where every piece tells a story. We bridge the gap between you and India's finest artisans, bringing centuries of skill and tradition to your doorstep Join us in celebrating true artistry",
             shopButton: "Shop Products",
             journeyButton: "Our Journey"
         },
