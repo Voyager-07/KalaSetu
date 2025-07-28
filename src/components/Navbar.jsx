@@ -1,5 +1,6 @@
 import React from "react"
 import { Globe } from "lucide-react";
+import logo from "../assets/logo.png";
 
 const Navbar = ({ language = 'en', setLanguage, currentSection, scrollToSection }) => {
     const toggleLanguage = () => {
@@ -13,7 +14,7 @@ const Navbar = ({ language = 'en', setLanguage, currentSection, scrollToSection 
             journey: 'Journey',
             about: 'About',
             brandName: 'KalaSetu',
-            tagline: "Artisan's Marketplace"
+            tagline: "Artisan Bridge"
         },
         hi: {
             home: 'होम',
@@ -38,11 +39,12 @@ const Navbar = ({ language = 'en', setLanguage, currentSection, scrollToSection 
         <div className="container mx-auto px-2 py-2">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-gradient-to-br from-amber-600 to-orange-600 rounded-full flex items-center justify-center">
+              {/* <div className="w-12 h-12 bg-gradient-to-br from-amber-600 to-orange-600 rounded-full flex items-center justify-center">
                 <div className="w-8 h-8 border-2 border-white rounded-full flex items-center justify-center">
                   <div className="w-4 h-4 bg-white rounded-full"></div>
                 </div>
-              </div>
+              </div> */}
+              <img src={logo} alt="" className="w-14 h-14 rounded-full" />
               <div className='flex flex-col'>
                 <h1 className="text-2xl font-bold text-amber-900 font-serif">{currentLang.brandName}</h1>
                 <h4 className='text-xs font-semibold text-amber-700/70 font-serif'>{currentLang.tagline}</h4>
