@@ -5,13 +5,13 @@ const Footer = ({ language = 'en' }) => {
         en: {
             title: "Vocal for Local",
             tagline: "Every purchase is a vote for preserving India's rich artisan heritage",
-            qrText: "Scan to visit our website",
+            qrText: "Scan to visit our Youtube",
             copyright: "© 2024 Vocal for Local. Made with ❤️ for Indian Artisans."
         },
         hi: {
             title: "वोकल फॉर लोकल",
             tagline: "हर खरीदारी भारत की समृद्ध कारीगर विरासत को संरक्षित करने के लिए एक वोट है",
-            qrText: "हमारी वेबसाइट पर जाने के लिए स्कैन करें",
+            qrText: "हमारे यूट्यूब पर जाने के लिए स्कैन करें",
             copyright: "© 2024 वोकल फॉर लोकल। भारतीय कारीगरों के लिए ❤️ से बनाया गया।"
         }
     };
@@ -19,7 +19,7 @@ const Footer = ({ language = 'en' }) => {
     const currentContent = content[language] || content.en;
 
     // Generate a simple QR code using a free QR code API
-    const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=${encodeURIComponent('https://kalasetu.com')}`;
+    const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=${encodeURIComponent('https://youtube.com/@kalasetu-v1m?si=UWvPx6xbir9bu3Lw')}`;
 
     return (
       <footer className="bg-gradient-to-r from-amber-900 to-orange-900 text-white py-12">
