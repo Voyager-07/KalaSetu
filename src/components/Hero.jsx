@@ -40,14 +40,14 @@ const Hero = ({ language = 'en', scrollToSection }) => {
         <div className="pt-35 pb-20 relative overflow-hidden">
             {/* Animated Artisan Images */}
             <img 
-                className={`absolute w-80 left-[-25px] bottom-[-50px] transition-all duration-1000 ease-out ${
+                className={`w-56 absolute sm:w-80 left-[-25px] bottom-[-50px] transition-all duration-1000 ease-out  ${
                     isVisible ? 'transform translate-x-0 opacity-100' : 'transform -translate-x-20 opacity-0'
                 } hover:scale-105 hover:translate-y-[-10px] transition-transform duration-300`}  
                 src={artisan1} 
                 alt="" 
             />
             <img 
-                className={`absolute w-72 right-[-15px] bottom-[-20px] transition-all duration-1000 ease-out delay-200 ${
+                className={`w-48 absolute sm:w-72 right-[-15px] bottom-[-20px] transition-all duration-1000 ease-out delay-200 ${
                     isVisible ? 'transform translate-x-0 opacity-100' : 'transform translate-x-20 opacity-0'
                 } hover:scale-105 hover:translate-y-[-10px] transition-transform duration-300`}  
                 src={artisan2} 
@@ -78,7 +78,7 @@ const Hero = ({ language = 'en', scrollToSection }) => {
                     </p>
 
                     {/* Buttons with bounce-in animation */}
-                    <div className={`flex flex-col sm:flex-row gap-6 justify-center transition-all duration-1000 ease-out delay-700 ${
+                    <div className={`flex flex-col sm:flex-row justify-center items-center gap-6 transition-all duration-1000 ease-out delay-700 ${
                         isVisible ? 'transform translate-y-0 opacity-100' : 'transform translate-y-10 opacity-0'
                     }`}>
                         <button 
@@ -86,13 +86,13 @@ const Hero = ({ language = 'en', scrollToSection }) => {
                                 navigate("/products");
                                 window.location.reload();
                             }}
-                            className="bg-gradient-to-r from-amber-600 to-orange-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-amber-700 hover:to-orange-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-2 hover:scale-105 active:scale-95"
+                            className="w-fit bg-gradient-to-r from-amber-600 to-orange-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-amber-700 hover:to-orange-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-2 hover:scale-105 active:scale-95"
                         >
                             {currentContent.shopButton}
                         </button>
                         <button 
                             onClick={() => scrollToSection('journey')}
-                            className="border-2 border-amber-600 text-amber-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-amber-600 hover:text-white transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 active:scale-95"
+                            className="w-fit border-2 border-amber-600 text-amber-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-amber-600 hover:text-white transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 active:scale-95"
                         >
                             {currentContent.journeyButton}
                         </button>
