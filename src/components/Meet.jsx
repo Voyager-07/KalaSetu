@@ -51,7 +51,7 @@ const Meet = ({ language = 'en' }) => {
                         </div>
                         <div className="w-20 h-1 bg-gradient-to-l from-transparent via-amber-300 to-transparent rounded-full"></div>
                     </div>
-                    <h2 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-amber-200 via-white to-amber-200 bg-clip-text text-transparent mb-8 font-serif tracking-wide drop-shadow-2xl">
+                    <h2 className="text-5xl md:text-8xl font-bold bg-gradient-to-r from-amber-200 via-white to-amber-200 bg-clip-text text-transparent mb-8 font-serif tracking-wide drop-shadow-2xl">
                         {currentContent.title}
                     </h2>
                     <div className="max-w-4xl mx-auto">
