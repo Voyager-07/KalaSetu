@@ -92,7 +92,7 @@ const Journey = ({ language = 'en' }) => {
     <div className="pt-28 pb-12 bg-gradient-to-r from-orange-800 via-red-800 to-orange-800">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-5xl font-bold text-white mb-4 font-serif">{currentLang.title}</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-serif">{currentLang.title}</h2>
           <p className="text-xl text-orange-100 max-w-2xl mx-auto">
             {currentLang.subtitle}
           </p>
