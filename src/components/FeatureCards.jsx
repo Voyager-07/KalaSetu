@@ -192,7 +192,7 @@ const FeatureCards = ({ language = 'en', navigateToPage }) => {
                             </div>
                             
                             <div className="text-xs text-amber-600">
-                                kalasetu.com
+                                kalasetuapp.netlify.app
                             </div>
                         </div>
                     </div>
