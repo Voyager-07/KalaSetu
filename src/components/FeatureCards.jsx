@@ -5,7 +5,7 @@ import { Upload, QrCode, Palette, Eye, X } from 'lucide-react';
 const FeatureCards = ({ language = 'en', navigateToPage }) => {
     const [isQrModalOpen, setIsQrModalOpen] = useState(false);
 
-    const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=${encodeURIComponent('https://kalasetu.com')}`;
+    const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=${encodeURIComponent('https://kalasetuapp.netlify.app/')}`;
 
     const openQrModal = () => setIsQrModalOpen(true);
     const closeQrModal = () => setIsQrModalOpen(false);
